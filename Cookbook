@@ -1,0 +1,197 @@
+==================================================================
+Human Activity Recognition Using Smartphones Dataset
+Version 1.0
+==================================================================
+ORIGINAL DATA SOURCE:   
+Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
+Smartlab - Non Linear Complex Systems Laboratory
+DITEN - Università degli Studi di Genova.
+Via Opera Pia 11A, I-16145, Genoa, Italy.
+activityrecognition@smartlab.ws
+www.smartlab.ws
+==================================================================
+
+DATA MODIFIED WITH run_analysis.R
+
+30 volunteers split into 2 group: 70% for generating the training data and 30% the test data.
+
+Measurements done on six activities: 
+WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+
+Total of 2947 observations in test data and 7352 observations in train data 
+
+79 summary measurements and 3 grouping variables
+
+tBodyAcc-mean()-X
+        Mean Triaxial body acceleration from the accelerometer  X axis
+tBodyAcc-mean()-Y               
+        Mean Triaxial body acceleration from the accelerometer  Y axis
+tBodyAcc-mean()-Z
+        Mean Triaxial body acceleration from the accelerometer  Z axis
+tBodyAcc-std()-X
+        Standard Deviation Triaxial body acceleration from the accelerometer X axis
+tBodyAcc-std()-Y                
+        Standard Deviation Triaxial body acceleration from the accelerometer Y axis
+tBodyAcc-std()-Z               
+        Standard Deviation Triaxial body acceleration from the accelerometer Z axis
+tGravityAcc-mean()-X
+        Mean Triaxial gravity acceleration from the accelerometer  X axis
+tGravityAcc-mean()-Y
+        Mean Triaxial gravity acceleration from the accelerometer Y axis
+tGravityAcc-mean()-Z
+        Mean Triaxial gravity acceleration from the accelerometer Z axis
+tGravityAcc-std()-X
+        Standard Deviation Triaxial gravity acceleration from the accelerometer X axis
+tGravityAcc-std()-Y             
+        Standard Deviation Triaxial gravity acceleration from the accelerometer Y axis
+tGravityAcc-std()-Z            
+        Standard Deviation Triaxial gravity acceleration from the accelerometer Z axis        
+tBodyAccJerk-mean()-X           
+        Mean Jerk Signal from Triaxial body acceleration from the accelerometer  X axis
+tBodyAccJerk-mean()-Y           
+        Mean Jerk Signal from Triaxial body acceleration from the accelerometer  Y axis
+tBodyAccJerk-mean()-Z          
+        Mean Jerk Signal from Triaxial body acceleration from the accelerometer  Z axis
+tBodyAccJerk-std()-X            
+        Standard Deviation Jerk Signal from Triaxial body acceleration from the accelerometer  X axis
+tBodyAccJerk-std()-Y      
+        Standard Deviation Jerk Signal from Triaxial body acceleration from the accelerometer  X axis
+tBodyAccJerk-std()-Z           
+        Standard Deviation Jerk Signal from Triaxial body acceleration from the accelerometer  X axis
+tBodyGyro-mean()-X
+        Mean Triaxial body acceleration from the gyroscope  X axis
+tBodyGyro-mean()-Y             
+        Mean Triaxial body acceleration from the gyroscope  Y axis
+tBodyGyro-mean()-Z             
+        Mean Triaxial body acceleration from the gyroscope  Z axis
+tBodyGyro-std()-X  
+        Standard Deviation Triaxial body acceleration from the gyroscope  X axis
+tBodyGyro-std()-Y               
+        Standard Deviation Triaxial body acceleration from the gyroscope  Y axis
+tBodyGyro-std()-Z              
+        Standard Deviation Triaxial body acceleration from the gyroscope  Z axis
+tBodyGyroJerk-mean()-X   
+        Mean Jerk Signal from Triaxial body acceleration from the gyroscope  X axis
+tBodyGyroJerk-mean()-Y          
+        Mean Jerk Signal from Triaxial body acceleration from the gyroscope  Y axis
+tBodyGyroJerk-mean()-Z    
+        Mean Jerk Signal from Triaxial body acceleration from the gyroscope  Z axis
+tBodyGyroJerk-std()-X 
+        Standard Deviation Jerk Signal from Triaxial body acceleration from the gyroscope  X axis
+tBodyGyroJerk-std()-Y           
+        Standard Deviation Jerk Signal from Triaxial body acceleration from the gyroscope  X axis
+tBodyGyroJerk-std()-Z          
+        Standard Deviation Jerk Signal from Triaxial body acceleration from the gyroscope  X axis
+tBodyAccMag-mean()
+        Mean magnitude of Triaxial gravity acceleration from the accelerometer
+tBodyAccMag-std()
+        Standard Deviation magnitude of Triaxial gravity acceleration from the accelerometer
+tGravityAccMag-mean()          
+        Mean magnitude of Triaxial gravity acceleration from the accelerometer
+tGravityAccMag-std() 
+        Standard Deviation magnitude of Triaxial gravity acceleration from the accelerometer
+tBodyAccJerkMag-mean()   
+        Mean Jerk Signal from Triaxial body acceleration from the accelerometer
+tBodyAccJerkMag-std()
+        Standard Deviation Jerk Signal from Triaxial body acceleration from the accelerometer
+tBodyGyroMag-mean()
+        Mean magnitude of Triaxial body acceleration from the gyroscope
+tBodyGyroMag-std() 
+        Standard Deviation magnitude of Triaxial body acceleration from the gyroscope
+tBodyGyroJerkMag-mean()        
+        Mean Jerk Signal from Triaxial body acceleration from the gyroscope
+tBodyGyroJerkMag-std()          
+        Standard Deviation Jerk Signal from Triaxial body acceleration from the gyroscope
+fBodyAcc-mean()-X   
+        Mean frequency domain signal Triaxial body acceleration from the accelerometer  X axis
+fBodyAcc-mean()-Y  
+        Mean frequency domain signal Triaxial body acceleration from the accelerometer  Y axis
+fBodyAcc-mean()-Z
+        Mean frequency domain signal Triaxial body acceleration from the accelerometer  Z axis
+fBodyAcc-std()-X
+        Standard Deviation frequency domain signal Triaxial body acceleration from the accelerometer  X axis
+fBodyAcc-std()-Y          
+        Standard Deviation frequency domain signal Triaxial body acceleration from the accelerometer  Y axis
+fBodyAcc-std()-Z               
+        Standard Deviation frequency domain signal Triaxial body acceleration from the accelerometer  Z axis
+fBodyAcc-meanFreq()-X
+        Weighted average of the frequency components body acceleration from the accelerometer X axis
+fBodyAcc-meanFreq()-Y 
+        Weighted average of the frequency components body acceleration from the accelerometer Y axis
+fBodyAcc-meanFreq()-Z           
+        Weighted average of the frequency components body acceleration from the accelerometer Z axis 
+fBodyAccJerk-mean()-X 
+        Mean frequency domain signal Jerk Signal from Triaxial body acceleration from the accelerometer X axis
+fBodyAccJerk-mean()-Y          
+        Mean frequency domain signal Jerk Signal from Triaxial body acceleration from the accelerometer Y axis
+fBodyAccJerk-mean()-Z           
+        Mean frequency domain signal Jerk Signal from Triaxial body acceleration from the accelerometer Z axis
+fBodyAccJerk-std()-X      
+        Standard Deviation frequency domain signal Jerk Signal from Triaxial body acceleration from the accelerometer X axis
+fBodyAccJerk-std()-Y      
+        Standard Deviation frequency domain signal Jerk Signal from Triaxial body acceleration from the accelerometer Y axis
+fBodyAccJerk-std()-Z      
+        Standard Deviation frequency domain signal Jerk Signal from Triaxial body acceleration from the accelerometer Z axis
+fBodyAccJerk-meanFreq()-X       
+        Weighted average of the frequency components Jerk Signal from Triaxial body acceleration from the accelerometer X axis
+fBodyAccJerk-meanFreq()-Y  
+        Weighted average of the frequency components Jerk Signal from Triaxial body acceleration from the accelerometer Y axis
+fBodyAccJerk-meanFreq()-Z       
+        Weighted average of the frequency components Jerk Signal from Triaxial body acceleration from the accelerometer Z axis
+fBodyGyro-mean()-X 
+        Mean frequency domain signal Triaxial body acceleration from the gyroscope  X axis
+fBodyGyro-mean()-Y             
+        Mean frequency domain signal Triaxial body acceleration from the gyroscope  Y axis
+fBodyGyro-mean()-Z              
+        Mean frequency domain signal Triaxial body acceleration from the gyroscope  Z axis
+fBodyGyro-std()-X         
+        Standard Deviation frequency domain signal Triaxial body acceleration from the gyroscope  X axis
+fBodyGyro-std()-Y              
+        Standard Deviation frequency domain signal Triaxial body acceleration from the gyroscope  Y axis
+fBodyGyro-std()-Z         
+        Standard Deviation frequency domain signal Triaxial body acceleration from the gyroscope  Z axis
+fBodyGyro-meanFreq()-X
+        Weighted average of the frequency components frequency domain signal Triaxial body acceleration from the gyroscope  X axis
+fBodyGyro-meanFreq()-Y         
+        Weighted average of the frequency components frequency domain signal Triaxial body acceleration from the gyroscope  Y axis
+fBodyGyro-meanFreq()-Z          
+        Weighted average of the frequency components frequency domain signal Triaxial body acceleration from the gyroscope  Z axis
+fBodyAccMag-mean()        
+        Mean magnitude of frequency domain signal of Triaxial gravity acceleration from the accelerometer
+fBodyAccMag-std()              
+        Standard Deviation of frequency domain signal of Triaxial gravity acceleration from the accelerometer
+fBodyAccMag-meanFreq() 
+        Weighted average of the frequency components of Triaxial gravity acceleration from the accelerometer
+fBodyBodyAccJerkMag-mean()
+         Mean magnitude of Jerk Signal from frequency domain signal Triaxial body acceleration from the accelerometer 
+fBodyBodyAccJerkMag-std() 
+        Standard Deviation magnitude of Jerk Signal from frequency domain signal Triaxial body acceleration from the accelerometer 
+fBodyBodyAccJerkMag-meanFreq()
+        Weighted average of the magnitude of frequency components of Jerk Signal from frequency domain signal Triaxial body acceleration from the accelerometer 
+fBodyBodyGyroMag-mean() 
+        Mean magnitude of frequency domain signal of Triaxial gravity acceleration from the gyroscope
+fBodyBodyGyroMag-std()    
+        Standard Deviation magnitude of frequency domain signal of Triaxial gravity acceleration from the gyroscope
+fBodyBodyGyroMag-meanFreq()  
+        Weighted average of the magnitude of frequency components of Jerk Signal from frequency domain signal Triaxial body acceleration from the  gyroscope
+fBodyBodyGyroJerkMag-mean()  
+        Mean magnitude of Jerk Signal from frequency domain signal Triaxial body acceleration from the gyroscope
+fBodyBodyGyroJerkMag-std()
+        Standard Deviation magnitude of Jerk Signal from frequency domain signal Triaxial body acceleration from the gyroscope
+fBodyBodyGyroJerkMag-meanFreq()
+        Weighted average of the magnitude of frequency components of Jerk Signal from frequency domain signal Triaxial body acceleration from the gyroscope
+group
+        group of the subject
+                test
+                train
+activity
+        activity of subject during measurement
+                WALKING
+                WALKING_UPSTAIRS
+                WALKING_DOWNSTAIRS
+                SITTING
+                STANDING
+                LAYING
+subject
+        subject identifier
+                1..30
